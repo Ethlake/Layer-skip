@@ -16,14 +16,14 @@ cd Layer-skip
 python -m venv .venv && source .venv/bin/activate
 pip install torch transformers lm-eval        # tested with transformers ≥ 4.40 :contentReference[oaicite:0]{index=0}
 
+# 3.Use the following command to evaluate models on various datasets (detailed information can be seen in official lm-evaluation-harness repositories)
+
 python -m lm_eval \
   --model hf \
-  --model_args "pretrained=meta-llama/Llama-2-7b-hf" \
+  --model_args "pretrained=meta-llama/Llama-2-7b" \
   --tasks arc_challenge \
   --device cuda
 
 
-**That’s it—drop this README into the repo and you’re good to go.**
-::contentReference[oaicite:3]{index=3}
 
 
